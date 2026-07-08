@@ -1,0 +1,24 @@
+class Solution {
+    public boolean checkPerfectNumber(int num) {
+        int sum=0;;
+        if(num<0){
+            return false;
+        }
+        for(int i=1;i<=num-1;i++){
+           if(num%i==0){
+           sum+=i;
+           }}
+           if(sum==num){
+           return true;
+        }
+        else{
+            return false;
+        }
+    }
+        public static void main(String[] args){
+        int num=28;
+        Solution sol=new Solution();
+        boolean result=sol.checkPerfectNumber(num);
+        System.out.println(result);
+    }
+}
